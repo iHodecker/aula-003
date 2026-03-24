@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+</head>
+<body>
+    <header>
+        <h1>AULA 06</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Videos</h2>
+
+        <div>
+                <h3>Video GTA online</h3>
+            <video autoplay muted controls width="500" src="https://videos.rockstargames.com/v4/2aks43mo/flv/en-us-2160p.mp4">Video gta online</video>
+        </div>
+
+        <div>
+            <h3>Video Youtube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7jOv-wLZF5I?si=lmFfQg3pqifcowFb&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+<!--Autoplay = video inicia ao entrar na pagina
+    Autoplay muted = video inica ao estar mutado-->
+
+        <section>
+            <h2>Tabelas</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th colspan="2">Job</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Igor</td>
+                        <td rowspan="2">19</td>
+                        <td>Operador</td>
+                        <td>lindo</td>
+                    </tr>
+                    <tr>
+                        <td>Guilherme</td>
+                        <!-- <td>19</td> -->
+                        <td>Vagabundo</td>
+                        <td>Safadinho</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Formularios -->
+
+        <section>
+            <h2>Formulários</h2>
+            <form method="post" action="">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label for="">Nome:</label>
+                    <input required placeholder="escreva seu nome" type="text" id="Nome" name="nome">
+                    <br>
+                    <label for="">Email:</label>
+                    <input placeholder="escreva seu email" type="email" id="email" name="email" value="@unifebe.edu.br">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Seleção de listas</legend>
+                    <label for="Estado"></label>
+                    <select name="estado selecionado" id="estado">
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual o melhor período de estudo?</legend>
+                    <input type="radio" id="Manha" name="perido">
+                    <label for="manha">manha</label>
+
+                    <input type="radio" id="tarde" name="perido">
+                    <label for="tarde">tarde</label>
+
+                    <input type="radio" id="noite" name="perido">
+                    <label for="noite">noite</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Lista de compras</legend>
+                    <input type="checkbox" id="Doritos">
+                    <label for="Doritos">Doritos</label>
+                    <br>
+                    <input type="checkbox" id="coca">
+                    <label for="coca">Coca-Cola</label>
+                    <br>
+                    <input type="checkbox" id="Chocolate">
+                    <label for="Chocolate">Chocolate</label>
+                    <br>
+                    <input type="checkbox" id="Carne">
+                    <label for="Carne">Carne</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentários</legend>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                </fieldset>
+                
+                <input type="submit">
+                <input type="reset">
+                
+            </form>
+        </section>
+    </main>
+</body>
+</html>
