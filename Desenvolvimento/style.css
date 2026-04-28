@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+div {
+    display: inline;
+}
+
+a {
+    display: block;
+}
+
+h1 {
+    /* remove a estrutura selecionada */ 
+    display: none;
+}
+
+.container {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.produtos {
+    display: flex;
+    background-color: brown;
+    justify-content: space-evenly;
+    
+}

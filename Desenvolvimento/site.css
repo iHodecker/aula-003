@@ -1,0 +1,61 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "cabecalho cabecalho cabecalho"
+    "menu conteudo publicidade"
+    "rodape rodape rodape";
+
+}
+
+header {grid-area: cabecalho;}
+aside {grid-area: menu;}
+main {grid-area: conteudo;}
+section {grid-area: publicidade;}
+footer { grid-area: rodape;}
+
+header {
+    background-color: aqua;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center
+}
+
+main {
+    background-color: blueviolet;
+    font-size: 40px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+aside {
+    background-color: brown;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+section {
+    background-color: blue;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+footer {
+    background-color: chocolate;
+    font-size: 40px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
